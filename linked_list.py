@@ -39,4 +39,5 @@ def app_five(block_list):
     for i in range(0,5):
         block_curr=next_block(block_curr)
         M4BlockChain.append(block_curr)
+        print(block_curr.content)
     pass
