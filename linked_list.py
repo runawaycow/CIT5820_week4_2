@@ -35,9 +35,9 @@ def next_block(last_block):
 # append 5 blocks to the blockchain
 def app_five(block_list):
     block_curr = create_genesis_block()
-    M4BlockChain = [block_curr]
+    #M4BlockChain = [block_curr]
     for i in range(0,5):
         block_curr=next_block(block_curr)
-        M4BlockChain.append(block_curr)
+        block_list.append(block_curr)
         print(block_curr.content)
     pass
